@@ -17,3 +17,13 @@ a {
 .MuiAppBar-root {
   width:100% !important;
 }
+
+.menuitems {
+  display:inline;
+}
+
+@media screen and (max-width: 600px) {
+  .menuitems {
+    display:none !important;
+  }
+}

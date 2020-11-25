@@ -6,6 +6,7 @@ import Navbar from './layouts/Navbar'
 import DrawerComponent from './layouts/Drawer'
 import Footer from './layouts/Footer';
 import ListofItems from './layouts/ListofItems';
+import CollapseMenu from './layouts/CollapseMenu';
 export default function Home() {
  
   const [open, setOpen] = React.useState(false);
@@ -78,11 +79,12 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Navbar menuButton={handleDrawerOpen}/>
       <DrawerComponent open={open} handleDrawerClose={handleDrawerClose}/>
-      <Footer/>
       <ListofItems/>
+      {/* <CollapseMenu/> */}
+      <Footer/>
     </div>
 
   )
